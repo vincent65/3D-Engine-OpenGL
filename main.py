@@ -21,7 +21,7 @@ class GraphicsEngine:
         self.ctx = mgl.create_context()
         #keep track of time
         self.clock = pg.time.Clock()
-
+        self.time = 0
     #exit when escape key is pressed
     def check_events(self):
         for event in pg.event.get():
@@ -34,6 +34,8 @@ class GraphicsEngine:
         self.ctx.clear(color=(0.08,0.16,0.18))
         #swap the buffers
         pg.display.flip()
+    def get_time(self):
+        self.time = pg.time.get_ticks() * 0.001
 
     def run(self):
         while True:
