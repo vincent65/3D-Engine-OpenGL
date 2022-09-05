@@ -1,7 +1,8 @@
 import pygame as pg
 import moderngl as mgl
 import sys
-
+from model import *
+from camera import Camera
 
 class GraphicsEngine:
     def __init__(self, win_size=(1600,900)):
