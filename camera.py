@@ -1,7 +1,7 @@
 import glm
 import pygame as pg
 
-FOV = 50  # deg
+FOV = 80  # deg
 NEAR = 0.1
 FAR = 100
 SPEED = 0.005

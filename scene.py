@@ -1,5 +1,6 @@
 #scene to be rendered by engine
 
+import turtle
 from model import *
 
 
@@ -16,13 +17,12 @@ class Scene:
         app = self.app
         add = self.add_object
 
-        n, s = 30, 3
-        for x in range(-n, n, s):
-            for z in range(-n, n, s):
-                add(Cube(app, pos=(x, -s, z)))
+        # n, s = 30, 3
+        # for x in range(-n, n, s):
+        #     for z in range(-n, n, s):
+        #         add(Cube(app, pos=(x, -s, z)))
 
-        add(Cat(app, pos=(0, -2, -10)))
-
+        add(Turtle(app, pos=(0, -2, -10)))
     def render(self):
         for obj in self.objects:
             obj.render()

@@ -9,3 +9,9 @@ Advantages of using ModernGL compared to PyOpenGL:
 OpenGL Rendering PipeLine
 
 Vertices -> Vertex Shader -> Primitive Assembly -> Rasterization -> Fragment Shader -> Tests -> FrameBuffer
+
+Dependencies
+* ModernGl
+* Pygame
+* Numpy
+* pywavefront
